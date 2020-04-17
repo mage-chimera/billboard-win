@@ -1,0 +1,20 @@
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Display artist</th>
+      <th>ranking</th>
+      <th>year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @artist.songs.each do |song| %>
+    <tr>
+      <td><%= song.title %></td>
+      <td><%= song.display_artist %></td>
+      <td><%= song.ranking %></td>
+      <td><%= song.year %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
